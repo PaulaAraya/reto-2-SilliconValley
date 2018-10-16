@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PicturesComponent } from './components/pictures/pictures.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { ApiUnsplashService } from './services/api-unsplash.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,9 +15,10 @@ import { PicturesComponent } from './components/pictures/pictures.component';
     PicturesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [ApiUnsplashService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
