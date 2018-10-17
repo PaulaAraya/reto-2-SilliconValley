@@ -17,7 +17,12 @@ nav {
     font-size: 28px;
     color: #bd312d;
     padding-left: 20px;
+    background-color: transparent;
     
+}
+
+.btn{
+    background-color: transparent;
 }
 
 .btnIcon{
@@ -73,6 +78,9 @@ input[type="radio"]:focus, input[type="checkbox"]:focus, input:focus {
       outline: none;
   }
 
+  .input-group-prepend{
+      margin-top: 16px;
+  }
   .searchInput {
     background-color: #efefef;
     border: none;
@@ -90,6 +98,7 @@ input[type="radio"]:focus, input[type="checkbox"]:focus, input:focus {
     border: none;
     font-weight: 700;
     border-radius: 5px 0px 0px 5px;
+    
   }
   
   .fa-search, 
