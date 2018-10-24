@@ -1,6 +1,11 @@
-<div *ngFor="let picture of pictures" class="card border-0">
-    <img class="card-img-top imgCard" src="{{picture.img}}" alt="Card image cap">
-    <div class="card-body">
+<div *ngFor="let picture of pictures" >
+<div class="pinWrapper card" data-toggle="modal" data-target="">
+    <img src="{{picture.img}}" class="imageResult" alt="">
+    <div class="descriptions">
+      <button class="btn pinBtn">
+        <i class="fas fa-ellipsis-h"></i>
+      </button>
       <p class="card-text">{{picture.description}}</p>
     </div>
+  </div>
 </div>
