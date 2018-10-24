@@ -22,12 +22,12 @@ export class PicturesComponent implements OnInit {
   getData() {
     this.api.getDataApi().subscribe(
       (pictures) => {
-        // console.log(pictures);
+         console.log(pictures);
         this.resultPicture.push(pictures);
         this.resultPicture.forEach(element => {
           this.dataPicture = element.results;
           // console.log(this.dataPicture);
-          this.getPictures(this.dataPicture);
+           this.getPictures(this.dataPicture);
         });
       }
       );
@@ -37,7 +37,9 @@ export class PicturesComponent implements OnInit {
     result.forEach( data => {
       this.pictures.push({
         img: data.urls.regular,
-        description: data.description
+        description: data.description,
+        tag: data.tag,
+        id: data.id
       });
       console.log(this.pictures);
     });
